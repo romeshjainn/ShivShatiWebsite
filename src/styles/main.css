@@ -26,3 +26,7 @@ a:hover {
 .content ul {
   @apply my-6;
 }
+
+.rs-panel-btn {
+  font-weight: 700 !important;
+}

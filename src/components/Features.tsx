@@ -4,7 +4,7 @@ import config from '../config/index.json';
 
 const Features = () => {
   const { features } = config;
-  const { title, subtitle, description, items: featuresList } = features;
+  const { title,  items: featuresList } = features;
   return (
     <div className={`py-12 bg-background`} id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,13 +12,15 @@ const Features = () => {
           <h2
             className={`text-base text-primary font-semibold tracking-wide uppercase`}
           >
-            {title}
+            What We Teach Is {title}
           </h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            {subtitle}
+            {/* {subtitle} */}
+            Indurstry Level Skills
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            {description}
+            {/* {description} */}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, deserunt dolorem. Vel sapiente et consectetur impedit magnam explicabo quas aspernatur, officiis nostrum error blanditiis minus distinctio dignissimos saepe earum voluptate!
           </p>
         </div>
 
@@ -28,7 +30,7 @@ const Features = () => {
               <div key={feature.name} className="relative">
                 <dt>
                   <div
-                    className={`absolute flex items-center justify-center h-12 w-12 rounded-md bg-background text-tertiary border-primary border-4`}
+                    className={`absolute flex items-center justify-center h-12 w-12 rounded-md bg-background text-tertiary border-primary border-2`}
                   >
                     <img
                       className={`inline-block h-6 w-6 rounded-full`}
@@ -45,6 +47,7 @@ const Features = () => {
                 </dd>
               </div>
             ))}
+   
           </dl>
         </div>
       </div>

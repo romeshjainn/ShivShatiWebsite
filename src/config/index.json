@@ -5,16 +5,16 @@
   },
   "navigation": [
     {
-      "name": "Specializations",
+      "name": "Courses",
       "href": "product"
     },
     {
-      "name": "Projects",
+      "name": "Technologies",
       "href": "features"
     },
 
     {
-      "name": "Pricing",
+      "name": "Enquiry",
       "href": "pricing"
     },
     {
@@ -41,17 +41,17 @@
     }
   },
   "product": {
-    "title": "What We Specialize In",
+    "title": "Courses",
     "items": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
-        "img": "/assets/images/product1.jpg"
+        "title": "Your All-in-One Software Solutions",
+        "description": "Transform your digital presence with our cutting-edge software development, app creation, website SEO, and front-end services. Simply update the config.json file with your company details, customize your assets, and your top-notch landing page is ready to go live. Don't forget to add any images you want to showcase to /assets/images and link them in the config.json.",
+        "img": "/assets/images/product2.jpg"
       },
       {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
-        "img": "/assets/images/product2.jpg"
+        "title": "Your Premier Digital Marketing Partner",
+        "description": "Elevate your brand with our expert digital marketing services. From strategic campaigns to targeted SEO, social media management, and analytics, we’ve got you covered. Update the config.json file with your company details, customize your assets, and your professional landing page will be ready to launch. Make sure to add any images you want to display to /assets/images and link them in the config.json.",
+        "img": "/assets/images/product1.jpg"
       }
     ]
   },
@@ -61,23 +61,23 @@
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     "items": [
       {
-        "name": "React.js",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
+        "name": "React",
+        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components. It allows developers to create large web applications that can update and render efficiently in response to data changes.",
         "icon": "/assets/images/react.png"
       },
       {
-        "name": "Tailwind",
-        "description": "Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.",
+        "name": "Tailwind CSS",
+        "description": "Tailwind CSS is a highly customizable, low-level CSS framework that provides utility classes for creating beautiful designs quickly without the need for complex custom CSS.",
         "icon": "/assets/images/tailwindcss.svg"
       },
       {
         "name": "Next.js",
-        "description": "Next.js is a framework for server-rendered React applications using Next.js.",
+        "description": "Next.js is a React framework for server-rendered or statically-exported applications. It provides features like server-side rendering, static site generation, and API routes for building modern web applications.",
         "icon": "/assets/images/nextjs.svg"
       },
       {
-        "name": "Typescript",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
+        "name": "TypeScript",
+        "description": "TypeScript is a programming language developed and maintained by Microsoft. It builds on JavaScript by adding static type definitions, which can help catch errors early and improve the development process.",
         "icon": "/assets/images/ts.png"
       }
     ]
@@ -124,23 +124,18 @@
   "about": {
     "sections": [
       {
-        "name": "Something",
-        "href": "#",
+        "name": "Terms & Conditions",
+        "href": "terms-and-conditions",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
-        "href": "#",
+        "name": "Privacy Policy",
+        "href": "privacy-policy",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
+        "name": "Refund / Cancellation",
+        "href": "refund-policy",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       }
     ],

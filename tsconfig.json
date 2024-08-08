@@ -1,40 +1,36 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "strict": true,
-    "alwaysStrict": true,
-    "strictNullChecks": true,
-    "noUncheckedIndexedAccess": true,
-
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "allowUnreachableCode": false,
-    "noFallthroughCasesInSwitch": true,
-
-    "target": "es5",
-    "outDir": "out",
-    "declaration": true,
-    "sourceMap": true,
-
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "allowJs": false,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-
-    "jsx": "preserve",
-    "noEmit": true,
-    "isolatedModules": true,
-    "incremental": true
+    "lib": [], // No library files are included
+    "module": "none", // No module system
+    "moduleResolution": "none", // No module resolution
+    "resolveJsonModule": false, // Do not resolve JSON modules
+    "removeComments": false, // Do not remove comments
+    "preserveConstEnums": false, // Do not preserve constant enums
+    "strict": false, // Disable all strict type-checking options
+    "alwaysStrict": false, // Disable strict mode
+    "strictNullChecks": false, // Disable strict null checks
+    "noUncheckedIndexedAccess": false, // Allow unchecked indexed access
+    "noImplicitAny": false, // Allow implicit 'any' types
+    "noImplicitReturns": false, // Allow functions with missing return statements
+    "noImplicitThis": false, // Allow implicit 'this' type
+    "noUnusedLocals": false, // Allow unused local variables
+    "noUnusedParameters": false, // Allow unused parameters
+    "allowUnreachableCode": true, // Allow unreachable code
+    "noFallthroughCasesInSwitch": false, // Allow fallthrough cases in switch statements
+    "target": "esnext", // Target the latest ECMAScript version
+    "outDir": "", // Output directory is empty
+    "declaration": false, // Do not generate declaration files
+    "sourceMap": false, // Do not generate source maps
+    "esModuleInterop": false, // Disable esModuleInterop
+    "allowSyntheticDefaultImports": false, // Disable synthetic default imports
+    "allowJs": true, // Allow JavaScript files
+    "skipLibCheck": false, // Do not skip library checks
+    "forceConsistentCasingInFileNames": false, // Do not enforce consistent casing
+    "jsx": "preserve", // Preserve JSX code for further processing
+    "noEmit": true, // Disable emitting output files
+    "isolatedModules": false, // Allow non-isolated modules
+    "incremental": false // Disable incremental compilation
   },
-  "exclude": ["./out/**/*", "./node_modules/**/*"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "exclude": [], // Exclude nothing
+  "include": [] // Include nothing
 }
