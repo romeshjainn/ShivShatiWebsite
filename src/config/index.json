@@ -23,8 +23,8 @@
     }
   ],
   "callToAction": {
-    "text": "Get started",
-    "href": "#"
+    "text": "Contact Us ->",
+    "href": "pricing"
   },
   "mainHero": {
     "title": "Shiv Shakti",
@@ -32,12 +32,12 @@
     "description": "We provide development solutions to help businesses grow and reduce unemployment by training students",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
-      "text": "Get started",
-      "href": "#"
+      "text": "Contact Us ",
+      "href": "pricing"
     },
     "secondaryAction": {
       "text": "Email us",
-      "href": "mailto:romeshjainn@gmail.com?subject=I like react landing page!"
+      "href": "mailto:info@shivshaktiinstitute.com?subject=I like react landing page!"
     }
   },
   "product": {

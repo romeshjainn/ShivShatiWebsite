@@ -1,12 +1,10 @@
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 export const CourseCard = ({data}:{data:any}) => {
 
-  useEffect(() => {
-    console.log(data, "item");
-  },[])
+
   return (
-    <div className="max-w-[30%] shadow-lg rounded-lg overflow-hidden relative bg-white">
+    <div className="cards w-full md:w-[30%] max-w-full shadow-lg rounded-lg overflow-hidden relative bg-white">
       <div className="relative">
         <img
           // src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"

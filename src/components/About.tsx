@@ -1,6 +1,8 @@
 import React from 'react';
 
 import config from '../config/index.json';
+import Canvas from "../components/Canvas";
+
 
 const About = () => {
   const { company, about } = config;
@@ -10,8 +12,55 @@ const About = () => {
   return (
     <div
       id="about"
-      className="mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 py-12"
+      className="mx-auto container xl:px-4 lg:px-12 sm:px-6 px-4 py-12"
     >
+      <section className="py-12">
+        <div className="container mx-auto px-6 md:px-8">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">
+            About Us
+          </h2>
+          <p className="text-lg text-center text-gray-700 mb-12">
+            We are a premier development and training institute dedicated to
+            empowering individuals and businesses through technology. Our
+            programs and services are designed to drive success and growth.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                Training Programs
+              </h3>
+              <p className="text-gray-600">
+                Equip yourself with essential tech skills through our diverse
+                training programs, including coding bootcamps and workshops
+                tailored to your career goals.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                Tech Projects
+              </h3>
+              <p className="text-gray-600">
+                From custom software solutions to innovative tech strategies,
+                our project management services are designed to meet your
+                specific needs.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                Digital Marketing
+              </h3>
+              <p className="text-gray-600">
+                Enhance your online presence with our digital marketing
+                expertise, including SEO and social media management strategies
+                that drive results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Canvas />
+
       <div className="flex flex-col items-center justify-center">
         <div>
           <img src={logo} alt={companyName} className="w-16 h-16" />
@@ -79,7 +128,7 @@ const About = () => {
         </div>
         <div className="flex items-center mt-6">
           <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
-            &copy; {new Date().getFullYear()} designed by{' '}
+            &copy; {new Date().getFullYear()} designed by{" "}
             <a href="https://github.com/issaafalkattan" rel="nofollow">
               Spegi Technology
             </a>
