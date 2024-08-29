@@ -5,69 +5,69 @@ import config from "../config/index.json";
 const Pricing = () => {
   const { pricing } = config;
   const [data, setData] = useState({
-    name:"",
-    number:"",
-    email:"",
-    message:"",
-  })
+    name: "",
+    number: "",
+    email: "",
+    message: "",
+  });
 
-  const handleMessageInput = (e:any) => {
+  const handleMessageInput = (e: any) => {
     const { name, value } = e.target;
     setData((prev) => ({ ...prev, [name]: value }));
   };
-
 
   useEffect(() => {
     console.log(data, "data");
   }, [data]);
 
-const handleSubmit = async () => {
-  const { name, number, email, message } = data;
-  console.log(name, number, email, message);
+  const handleSubmit = async () => {
+    const { name, number, email, message } = data;
+    console.log(name, number, email, message);
 
-  console.log(
-    name.length > 3 &&
+    console.log(
+      name.length > 3 &&
+        number.length > 9 &&
+        email.length > 0 &&
+        message.length > 0
+    );
+    // Adjust validation to >= for minimum length requirements
+    if (
+      name.length > 3 &&
       number.length > 9 &&
       email.length > 0 &&
       message.length > 0
-  );
-  // Adjust validation to >= for minimum length requirements
-  if (
-    name.length > 3 &&
-    number.length > 9 &&
-    email.length > 0 &&
-    message.length > 0
-  ) {
-    const sheetId = "https://sheetdb.io/api/v1/4qrmu2rpe3kad";
+    ) {
+      // const sheetId = "https://sheetdb.io/api/v1/4qrmu2rpe3kad";
+      const sheetId = "https://sheetdb.io/api/v1/rvd5415k7fyqt";
 
-    try {
-      const response = await fetch(sheetId, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          number,
-          email,
-          message,
-        }),
-      });
+      try {
+        const response = await fetch(sheetId, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            number,
+            email,
+            message,
+          }),
+        });
 
-      if (response.ok) {
-        const result = await response.json();
-        console.log("Data submitted successfully:", result);
-        // Handle successful submission, e.g., clear the form
-      } else {
-        console.error("Error submitting data:", response.statusText);
+        if (response.ok) {
+          const result = await response.json();
+          console.log("Data submitted successfully:", result);
+          // Handle successful submission, e.g., clear the form
+        } else {
+          console.error("Error submitting data:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Error submitting data:", error);
       }
-    } catch (error) {
-      console.error("Error submitting data:", error);
+    } else {
+      console.log("Form validation failed. Please check your input.");
     }
-  } else {
-    console.log("Form validation failed. Please check your input.");
-  }
-};
+  };
 
   return (
     <>
