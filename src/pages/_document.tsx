@@ -29,6 +29,7 @@ class MyDocument extends Document {
           />
           <meta name="theme-color" content="#000000" />
           <meta name="description" content="Your description here" />
+          <meta name="facebook-domain-verification" content="y4h5hh2ev0bzn0viktbgxztfyydh7b" />
         </Head>
         <body>
           <Main />
