@@ -16,9 +16,9 @@ const Pricing = () => {
     setData((prev) => ({ ...prev, [name]: value }));
   };
 
-  useEffect(() => {
-    console.log(data, "data");
-  }, [data]);
+  function cleanString(str: any) {
+    return str.trim().replace(/\s+/g, " ");
+  }
 
   const handleSubmit = async () => {
     const { name, number, email, message } = data;
@@ -50,7 +50,7 @@ const Pricing = () => {
             name,
             number,
             email,
-            message,
+            message: cleanString(message),
           }),
         });
 
