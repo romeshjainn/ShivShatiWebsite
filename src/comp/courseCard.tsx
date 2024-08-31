@@ -5,7 +5,8 @@ export const CourseCard = ({ data }: { data: any }) => {
   return (
     <Link
       href={data?.route}
-      className="cards w-full md:w-[30%] max-w-full shadow-lg rounded-lg overflow-hidden relative bg-white"
+      // className="cards w-[30%] md:w-[30%] max-w-[30%] shadow-lg rounded-lg overflow-hidden relative bg-white"
+      className="cards mr-4 w-[100px] shadow-lg rounded-lg overflow-hidden relative bg-white"
       passHref
     >
       <a>
@@ -14,7 +15,7 @@ export const CourseCard = ({ data }: { data: any }) => {
             <img
               src={data.img}
               alt="ui/ux review check"
-              className="w-full h-auto"
+              className="w-full h-[220px] rounded-md"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-black/60" />
             {/* <button className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2">
@@ -53,9 +54,26 @@ export const CourseCard = ({ data }: { data: any }) => {
               {data.description} .....{" "}
               <span className="text-[#ec4755]">Read More</span>
             </div>
-            <div className="text-gray-600 font-semibold mt-4 text-[1.1rem]">
-              Duration : {data.duration}
+            <div className="text-gray-600 font-semibold flex flex-col gap-2 mt-4 text-[1.1rem]">
+              <p>Duration : {data.duration}</p>
+              <p>
+                Old Price :
+                <span className="line-through text-red-500 ml-1">
+                  Rs. {data.oldPrice}
+                </span>
+                <span className="ml-2">New Price :</span>
+                <span className="text-blue-500 ml-1">Rs. {data.newPrice}</span>
+              </p>
+
+              <p className="text-yellow-600">
+                Offer Valid Till <span>30 Sep, 2024</span>
+              </p>
             </div>
+            <Link href="/purchase">
+              <a className="inline-block mt-3  bg-[#ec4755] text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                Buy Now
+              </a>
+            </Link>
             <div className="mt-8 flex flex-wrap gap-3">
               <div className="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-3 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 hover:opacity-70">
                 <svg
