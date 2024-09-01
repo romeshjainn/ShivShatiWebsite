@@ -21,7 +21,12 @@ const PurchasePage = () => {
             and skills. Don’t miss out on this chance to advance your career.
           </p>
           {/* Placeholder for payment gateway integration */}
-          <div
+          <Link href="/checkout">
+            <a className="inline-block bg-[#ec4755] text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+              Checkout
+            </a>
+          </Link>
+          {/* <div
             onClick={() =>
               window.alert("Payment gateway integration is upcoming.")
             }
@@ -29,7 +34,7 @@ const PurchasePage = () => {
             <a className="inline-block bg-[#ec4755] text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
               Buy Now
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
