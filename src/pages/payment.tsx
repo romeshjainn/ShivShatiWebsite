@@ -7,7 +7,15 @@ const Payment = () => {
   const [utrCode, setUtrCode] = useState("");
   const [screenshot, setScreenshot] = useState(null);
 
-  const [name, setName] = useState(localStorage.getItem("name"));
+  const [name, setName] = useState("");
+  useEffect(() => {
+    const userName = localStorage.getItem("name");
+    if (userName) {
+      setName(userName);
+    } else {
+      router.push("/registration");
+    }
+  }, []);
 
   const handleUtrChange = (e) => {
     setUtrCode(e.target.value);
