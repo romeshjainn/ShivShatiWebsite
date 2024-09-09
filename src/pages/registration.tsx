@@ -36,7 +36,7 @@ const CourseRegistrationForm = () => {
         }),
       });
       console.log("response: ", response);
-      
+
       if (isMobileVerified) {
         router.push("/payment");
         localStorage.setItem("name", formData.name);
@@ -100,7 +100,7 @@ const CourseRegistrationForm = () => {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-8 shadow-md rounded-md w-full max-w-md"
+        className="bg-white p-8 shadow-md rounded-md w-full max-w-[50%]"
       >
         <h2 className="text-2xl font-bold text-center mb-6">
           Register for a Course
@@ -220,12 +220,16 @@ const CourseRegistrationForm = () => {
             <option value="" disabled>
               -- Select a course --
             </option>
+            <option value="Java">Java</option>
+            <option value="Digital Marketing">Python</option>
+            <option value="Digital Marketing">React JS</option>
+            <option value="Digital Marketing">Java Fullstack</option>
+            <option value="Digital Marketing">Python Fullstack</option>
             <option value="Digital Marketing">Digital Marketing</option>
             <option value="Data Science Analytics">
-              Data Science Analytics
+              Data Science / Analytics
             </option>
             <option value="Web Development">Web Development</option>
-            <option value="Java">Java</option>
           </select>
         </div>
 

@@ -30,6 +30,7 @@ const Payment = () => {
   const router = useRouter();
   const handleSubmit = async (e) => {
     e.preventDefault();
+    toast.loading("Submitting Form");
 
     if (!utrCode || !screenshot) {
       alert("Please fill in the UTR code and upload a screenshot.");
@@ -52,8 +53,11 @@ const Payment = () => {
         }),
       });
 
+      toast.dismiss("Submitting Form");
       toast.success(`Thank You ${name}, We Will Get Back To You Soon`);
-      router.push("/");
+      setTimeout(() => {
+        router.push("/");
+      }, 2000);
 
       console.log("response: ", response);
 
@@ -63,6 +67,9 @@ const Payment = () => {
 
       // Optionally: Send UTR code and file URL to backend here
     } catch (error) {
+      toast.dismiss();
+      toast.error("Form Submission Failed");
+
       console.error("Error submitting payment details:", error);
     }
   };
