@@ -100,7 +100,7 @@ const CourseRegistrationForm = () => {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-8 shadow-md rounded-md w-full max-w-[50%]"
+        className="bg-white p-8 shadow-md rounded-md w-full max-w-[40%]"
       >
         <h2 className="text-2xl font-bold text-center mb-6">
           Register for a Course
