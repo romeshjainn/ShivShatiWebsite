@@ -71,7 +71,7 @@ export const cardData2 = [
     description:
       "Learn Python from the ground up! Master core programming concepts, data structures, and object-oriented programming to build versatile applications. Explore libraries for web development, automation, and data manipulation.",
     duration: "3 Months",
-    oldPrice: "65,000",
+    oldPrice: "45,000",
     newPrice: "20,000",
     offerValidTill: "30 Sep, 2024",
   },
