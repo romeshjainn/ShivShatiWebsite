@@ -32,12 +32,21 @@ const Product = () => {
             ))}
           </>
         </div>
-        <div className='grid place-items-center'>
-          {cardData2?.map((item, index) => (
-            <div key={index} className='w-1/3 mt-12'>
-              <CourseCard2 data={item} />
-            </div>
-          ))}
+
+        <div className="mt-8 flex flex-col items-center  justify-center sm:flex-row gap-2 pr-8">
+          <>
+            {cardData2?.map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  marginTop:
+                    index === 1 ? "1.2rem" : index === 2 ? "1.2rem" : "0",
+                }}
+              >
+                <CourseCard data={item} />
+              </div>
+            ))}
+          </>
         </div>
       </div>
     </div>

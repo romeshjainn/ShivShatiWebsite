@@ -53,4 +53,26 @@ export const cardData2 = [
     newPrice: "45,000",
     offerValidTill: "30 Sep, 2024",
   },
+  {
+    route: "/java",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjjVJU5YY3EFTH9c9XvCh-Eg2GcPywqqKYcQ&s",
+    title: "Java Course",
+    description:
+      "Master Java programming fundamentals! Learn object-oriented concepts, exception handling, multithreading, and advanced features like JDBC and collections to build scalable applications.",
+    duration: "6 Months",
+    oldPrice: "45,000",
+    newPrice: "20,000",
+    offerValidTill: "30 Sep, 2024",
+  },
+  {
+    route: "/python",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8CeQPcq9-PgH7GFXIGyfispzQ6WIKAxxIdw&s",
+    title: "Python Course",
+    description:
+      "Learn Python from the ground up! Master core programming concepts, data structures, and object-oriented programming to build versatile applications. Explore libraries for web development, automation, and data manipulation.",
+    duration: "6 Months",
+    oldPrice: "65,000",
+    newPrice: "40,000",
+    offerValidTill: "30 Sep, 2024",
+  },
 ];
