@@ -13,7 +13,7 @@ export const cardData = [
       "Master the art of online marketing! Our Digital Marketing course covers SEO, social media marketing, email marketing, and analytics to help you grow any business in the digital world.",
     duration: "3 Months",
     oldPrice: "50,000",
-    newPrice: "15,000",
+    newPrice: "20,000",
     offerValidTill: "30 Sep, 2024",
   },
   {
@@ -34,8 +34,8 @@ export const cardData = [
     description:
       "Kickstart your career as a full stack developer with Python! This course covers Python, Django, HTML, CSS, and JavaScript, enabling you to build robust web applications.",
     duration: "6 Months",
-    oldPrice: "80,000",
-    newPrice: "25,000",
+    oldPrice: "70,000",
+    newPrice: "45,000",
     offerValidTill: "30 Sep, 2024",
   },
 ];
@@ -49,8 +49,8 @@ export const cardData2 = [
     description:
       "Become proficient in full stack development with Java! Learn backend development with Spring Boot and front-end technologies like HTML, CSS, and JavaScript to build enterprise-level applications.",
     duration: "6 Months",
-    oldPrice: "85,000",
-    newPrice: "30,000",
+    oldPrice: "70,000",
+    newPrice: "45,000",
     offerValidTill: "30 Sep, 2024",
   },
 ];

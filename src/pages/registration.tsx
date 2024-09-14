@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { sendMobileOtp, verifyMobileOtp } from "../api/otp";
 import toast from "react-hot-toast";
 import { useRouter } from "next/router";
+import course from "next-seo/lib/jsonld/course";
 
 const CourseRegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -11,10 +12,14 @@ const CourseRegistrationForm = () => {
     course: "",
   });
 
-  const handleChange = (e) => {
+
+  
+  const handleChange = (e:any) => {
+    const {value, name} = e.target
+    console.log(e.target.value)
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
   };
 
@@ -41,7 +46,7 @@ const CourseRegistrationForm = () => {
         router.push("/payment");
         localStorage.setItem("name", formData.name);
       } else {
-        toast.error("Please Verify Mobile Number");
+        console.log("Please Verify Mobile Number");
       }
     } catch (error) {
       console.log(error);
@@ -97,10 +102,10 @@ const CourseRegistrationForm = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center p-2 justify-center bg-gray-100">
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-8 shadow-md rounded-md w-full max-w-[40%]"
+        className="bg-white p-8 shadow-md rounded-md w-full  sm:max-w-[40%]"
       >
         <h2 className="text-2xl font-bold text-center mb-6">
           Register for a Course
@@ -221,15 +226,15 @@ const CourseRegistrationForm = () => {
               -- Select a course --
             </option>
             <option value="Java">Java</option>
-            <option value="Digital Marketing">Python</option>
-            <option value="Digital Marketing">React JS</option>
-            <option value="Digital Marketing">Java Fullstack</option>
-            <option value="Digital Marketing">Python Fullstack</option>
-            <option value="Digital Marketing">Digital Marketing</option>
-            <option value="Data Science Analytics">
+            <option value="python">Python</option>
+            <option value="react-js">React JS</option>
+            <option value="java-fullstack">Java Fullstack</option>
+            <option value="python-fullstack">Python Fullstack</option>
+            <option value="digital-marketing">Digital Marketing</option>
+            <option value="dsa">
               Data Science / Analytics
             </option>
-            <option value="Web Development">Web Development</option>
+            <option value="web-dev">Web Development</option>
           </select>
         </div>
 

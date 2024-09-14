@@ -75,8 +75,8 @@ const Payment = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100">
-      <div className="bg-white shadow-lg rounded-lg p-8 max-w-[50%] my-4 w-full text-center">
+    <div className="min-h-screen flex flex-col justify-center p-2 items-center bg-gray-100">
+      <div className="bg-white shadow-lg rounded-lg p-8 md:max-w-[50%] my-4 w-full text-center">
         <h1 className="text-2xl font-bold text-gray-800 mb-6">
           Make a Payment
         </h1>
