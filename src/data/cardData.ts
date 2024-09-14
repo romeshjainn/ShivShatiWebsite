@@ -11,7 +11,7 @@ export const cardData = [
     title: "Digital Marketing",
     description:
       "Master the art of online marketing! Our Digital Marketing course covers SEO, social media marketing, email marketing, and analytics to help you grow any business in the digital world.",
-    duration: "3 Months",
+    duration: "6 Months",
     oldPrice: "50,000",
     newPrice: "20,000",
     offerValidTill: "30 Sep, 2024",
