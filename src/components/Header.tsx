@@ -59,12 +59,12 @@ const Menu = () => {
                     {item.name}
                   </Link>
                 ))}
-                <a
-                  href={"/book-a-demo"}
+                <Link
+                  to={"product"}
                   className="inline-block  whitespace-nowrap bg-[#ec4755] text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
                 >
                   Book A Demo
-                </a>
+                </Link>
               </div>
               {/*               
               <a
