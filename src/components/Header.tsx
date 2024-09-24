@@ -44,24 +44,33 @@ const Menu = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-              {navigation.map((item) => (
-                <Link
-                  spy={true}
-                  active="active"
-                  smooth={true}
-                  duration={1000}
-                  key={item.name}
-                  to={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900"
+            <div className="text-[2.4vh] hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+              <div className="flex items-center gap-8">
+                {navigation.map((item) => (
+                  <Link
+                    spy={true}
+                    active="active"
+                    smooth={true}
+                    duration={1000}
+                    key={item.name}
+                    to={item.href}
+                    className="font-medium text-gray-500 hover:text-gray-900"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+                <a
+                  href={"/book-a-demo"}
+                  className="inline-block  whitespace-nowrap bg-[#ec4755] text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
                 >
-                  {item.name}
-                </Link>
-              ))}
+                  Book A Demo
+                </a>
+              </div>
+              {/*               
               <a
                 href="#"
                 className={`font-medium text-primary hover:text-secondary`}
-              ></a>
+              ></a> */}
             </div>
           </nav>
         </div>

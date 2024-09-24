@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
-
+import router, { useRouter } from "next/router";
 export const CourseCard = ({ data }: { data: any }) => {
+  const router = useRouter();
   return (
     <Link
       href={data?.route}
@@ -69,11 +70,27 @@ export const CourseCard = ({ data }: { data: any }) => {
                 Offer Valid Till <span>30 Sep, 2024</span>
               </p>
             </div>
-            <Link href="/purchase">
-              <a className="inline-block mt-3  bg-[#ec4755] text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                Buy Now
-              </a>
-            </Link>
+            <div className="flex gap-2 items-center mt-3">
+              <Link href="/purchase">
+                <a className="inline-block  bg-[#ec4755] text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                  Buy Now
+                </a>
+              </Link>
+              <div
+                // href={`/book-demo`}
+                onClick={() => {
+                  localStorage.setItem("calendarlyLink", data?.bookADemo);
+                  setTimeout(() => {
+                    router.push("/book-demo");
+                  },1000)
+                }}
+
+              >
+                <a className="inline-block  bg-[#ec4755] text-white font-semibold py-2 px-3 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                  Book A Demo
+                </a>
+              </div>
+            </div>
             <div className="mt-8 flex flex-wrap gap-3">
               <div className="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-3 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 hover:opacity-70">
                 <svg
