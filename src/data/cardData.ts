@@ -64,7 +64,7 @@ export const cardData2 = [
     title: "Java Course",
     description:
       "Master Java programming fundamentals! Learn object-oriented concepts, exception handling, multithreading, and advanced features like JDBC and collections to build scalable applications.",
-    duration: "6 Months",
+    duration: "3 Months",
     oldPrice: "45,000",
     newPrice: "20,000",
     offerValidTill: "30 Sep, 2024",
@@ -76,8 +76,8 @@ export const cardData2 = [
     title: "Python Course",
     description:
       "Learn Python from the ground up! Master core programming concepts, data structures, and object-oriented programming to build versatile applications. Explore libraries for web development, automation, and data manipulation.",
-    duration: "6 Months",
-    oldPrice: "65,000",
+    duration: "3 Months",
+    oldPrice: "45,000",
     newPrice: "20,000",
     offerValidTill: "30 Sep, 2024",
     bookADemo:""
