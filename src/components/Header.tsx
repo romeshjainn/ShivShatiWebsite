@@ -59,12 +59,14 @@ const Menu = () => {
                     {item.name}
                   </Link>
                 ))}
-                <Link
-                  to={"product"}
+                <a
+                  href={"https://calendly.com/shivshaktiinstitute"}
+                  target="_blank"
                   className="inline-block  whitespace-nowrap bg-[#ec4755] text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
                 >
                   Book A Demo
-                </Link>
+                </a>
+               
               </div>
               {/*               
               <a
@@ -118,6 +120,15 @@ const Menu = () => {
                     {item.name}
                   </Link>
                 ))}
+              </div>
+              <div className="grid place-items-center">
+                <a
+                  href={"https://calendly.com/shivshaktiinstitute"}
+                  target="_blank"
+                  className="inline-block  whitespace-nowrap bg-[#ec4755] text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                >
+                  Book A Demo
+                </a>
               </div>
               <a
                 href={callToAction.href}

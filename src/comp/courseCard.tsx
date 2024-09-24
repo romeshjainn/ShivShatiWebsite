@@ -70,12 +70,12 @@ export const CourseCard = ({ data }: { data: any }) => {
                 Buy Now
               </a>
             </Link>
-            <button
+            {/* <button
               onClick={handleDemoClick}
               className="inline-block bg-[#ec4755] text-white font-semibold py-2 px-3 rounded-lg shadow-lg transition-transform transform hover:scale-105"
             >
               Book A Demo
-            </button>
+            </button> */}
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <div className="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-3 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 hover:opacity-70">
