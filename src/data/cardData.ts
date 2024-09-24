@@ -16,23 +16,25 @@ export const cardData = [
     oldPrice: "50,000",
     newPrice: "20,000",
     offerValidTill: "30 Sep, 2024",
-    bookADemo:""
+    bookADemo:
+      "https://calendly.com/shivshaktiinstitute/ssti-python-demo-class-clone?month=2024-09",
   },
   {
     route: "/web-development",
     img: webDevCover,
     title: "Web Development",
     description:
-    "Become a full stack web developer! Learn HTML, CSS, JavaScript, and modern frameworks like React.js to build dynamic websites and web applications from scratch.",
+      "Become a full stack web developer! Learn HTML, CSS, JavaScript, and modern frameworks like React.js to build dynamic websites and web applications from scratch.",
     duration: "6 Months",
     oldPrice: "70,000",
     newPrice: "20,000",
     offerValidTill: "30 Sep, 2024",
-    bookADemo:""
+    bookADemo:
+      "https://calendly.com/shivshaktiinstitute/ssti-java-demo-class-clone",
   },
   {
     route: "/python-full-stack",
-    img:pythonFullstackCover,
+    img: pythonFullstackCover,
     title: "Python Full Stack",
     description:
       "Kickstart your career as a full stack developer with Python! This course covers Python, Django, HTML, CSS, and JavaScript, enabling you to build robust web applications.",
@@ -40,7 +42,8 @@ export const cardData = [
     oldPrice: "70,000",
     newPrice: "45,000",
     offerValidTill: "30 Sep, 2024",
-    bookADemo:""
+    bookADemo:
+      "https://calendly.com/shivshaktiinstitute/ssti-web-development-demo-class-clone",
   },
 ];
 
@@ -56,7 +59,8 @@ export const cardData2 = [
     oldPrice: "70,000",
     newPrice: "45,000",
     offerValidTill: "30 Sep, 2024",
-    bookADemo:"https://calendly.com/admission-shivshaktiinstitute/ssti-java-demo-class"
+    bookADemo:
+      "https://calendly.com/shivshaktiinstitute/ssti-java-demo-class",
   },
   {
     route: "/java",
@@ -68,7 +72,7 @@ export const cardData2 = [
     oldPrice: "45,000",
     newPrice: "20,000",
     offerValidTill: "30 Sep, 2024",
-    bookADemo:"https://calendly.com/admission-shivshaktiinstitute/ssti-java-demo-class"
+    bookADemo: "https://calendly.com/shivshaktiinstitute/ssti-java-demo-class",
   },
   {
     route: "/python",
@@ -80,6 +84,7 @@ export const cardData2 = [
     oldPrice: "45,000",
     newPrice: "20,000",
     offerValidTill: "30 Sep, 2024",
-    bookADemo:""
+    bookADemo:
+      "https://calendly.com/shivshaktiinstitute/ssti-web-development-demo-class-clone",
   },
 ];

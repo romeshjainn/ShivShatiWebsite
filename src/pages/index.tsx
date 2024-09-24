@@ -13,8 +13,10 @@ import Product from '../components/Product';
 import Help from '../components/Help';
 
 const App = () => {
+
+
   return (
-    <div className={`bg-background grid gap-y-16 overflow-hidden`}>
+    <div className={`bg-background grid gap-y-16 overflow-hidden relative`}>
       <div className={`relative bg-background`}>
         <div className="max-w-7xl mx-auto">
           <div
@@ -55,6 +57,17 @@ const App = () => {
         </>
       </LazyShow>
       <Analytics />
+      <a
+        href="https://web.whatsapp.com/send/?phone=917987222325&text&type=phone_number&app_absent=0"
+        target='_blank'
+        className="fixed right-14 bottom-10"
+      >
+        <img
+          className="h-16 hover:h-20 aspect-square"
+          src="https://cdn3.iconfinder.com/data/icons/social-media-app-2/128/Whatsapp.png"
+          alt=""
+        />
+      </a>
     </div>
   );
 };

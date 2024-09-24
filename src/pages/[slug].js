@@ -39,6 +39,7 @@ const SlugPage = () => {
             className="w-full h-64 object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
+          <img className="absolute h-24 top-2 right-2" src="https://i.ibb.co/jZ1p0Dp/isojpg-removebg-preview.png" alt="isojpg-removebg-preview" border="0"/>
         </div>
         <div className="p-6 text-center">
           <h1 className="text-4xl font-bold mb-4">{data.title}</h1>

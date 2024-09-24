@@ -9,6 +9,28 @@ const About = () => {
   const { logo, name: companyName } = company;
   const { socialMedia, sections } = about;
 
+  const icons = [
+    {
+      label: "whatsapp",
+      icon: "https://img.icons8.com/?size=96&id=16713&format=png",
+      url: "https://web.whatsapp.com/send/?phone=917987222325&text&type=phone_number&app_absent=0",
+    },
+    {
+      label: "linkedin",
+      icon: "https://img.icons8.com/?size=96&id=13930&format=png",
+      url: "https://www.linkedin.com/company/shivshaktiinstitute",
+    },
+    {
+      label: "facebook",
+      icon: "https://img.icons8.com/?size=96&id=118497&format=png",
+      url: "https://www.facebook.com/shivshaktiinstituteofficial",
+    },
+    {
+      label: "instgram",
+      icon: "https://cdn2.iconfinder.com/data/icons/oneui/24/Instagram-128.png",
+      url: "https://www.instagram.com/shivshaktiinstituteofficial",
+    },
+  ];
   return (
     <div
       id="about"
@@ -61,7 +83,7 @@ const About = () => {
 
       <Canvas />
 
-      <div className="flex flex-col items-center justify-center">
+      <div className=" flex flex-col items-center justify-center">
         <div>
           <img src={logo} alt={companyName} className=" h-16" />
         </div>
@@ -77,18 +99,17 @@ const About = () => {
           ))}
         </div>
         <div className="flex items-center gap-x-8 mt-6 h-8">
-          <img
-            className="h-10 w-10"
-            src="https://img.icons8.com/?size=96&id=16713&format=png"
-          />
-          <img
-            className="h-10 w-10"
-            src="https://img.icons8.com/?size=96&id=13930&format=png"
-          />
-          <img
-            className="h-10 w-10"
-            src="https://img.icons8.com/?size=96&id=118497&format=png"
-          />
+          {icons.map((item, index) => {
+            return (
+              <a target="_blank" key={item.label} href={item.url}>
+                <img
+                  className={`${index == 3 ? "h-8 w-8" : "h-10 w-10"}`}
+                  src={item.icon}
+                />
+              </a>
+            );
+          })}
+
           {/* <a
             aria-label="github"
             href={socialMedia.github}
@@ -138,14 +159,16 @@ const About = () => {
             </svg>
           </a> */}
         </div>
-        <div className="flex items-center mt-6">
+        <div className="flex items-center mt-6 ">
           <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
-            &copy; {new Date().getFullYear()} designed & developed by{" "}
+            &copy; {new Date().getFullYear()} Designed & Developed by{" "}
             <a href="" rel="nofollow">
-              SPEGI Technologies
+              SPEGI Technologies Pvt Ltd
             </a>
           </p>
         </div>
+
+       
       </div>
     </div>
   );
