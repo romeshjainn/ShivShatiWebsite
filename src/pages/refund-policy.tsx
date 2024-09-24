@@ -29,6 +29,12 @@ const RefundPolicy = () => {
           that we cannot process refunds.
         </p>
       </section>
+      <div className="text-center mt-3">
+ 
+        <p className="text-[#4b5563] text-[2.5vh] mt-3">
+          Toll Free : 0731-3607016
+        </p>
+      </div>
     </div>
   );
 };
