@@ -26,6 +26,11 @@ const PurchasePage = () => {
               Checkout
             </a>
           </Link>
+          <p className="text-[#4b5563] text-[2.5vh] mt-3">
+            For Enquiry Contact Us : 0731-3602650, 51, 52, 53, 54
+          </p>
+          <p className="text-[#4b5563] text-[2.5vh] mt-1">
+        Toll Free : 0731-3607016</p>
           {/* <div
             onClick={() =>
               window.alert("Payment gateway integration is upcoming.")
