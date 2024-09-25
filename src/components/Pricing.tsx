@@ -70,7 +70,7 @@ const Pricing = () => {
   };
 
   return (
-    <>
+    <div className="pr-10">
       <div id="pricing" className="hidden md:flex w-full p-4 ">
         <div className="w-1/2 p-8">
           <img
@@ -191,7 +191,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default Pricing;

@@ -34,7 +34,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="mx-auto container xl:px-4 lg:px-12 sm:px-6 px-4 py-12"
+      className="mx-auto container xl:px-2 lg:px-12 pr-12 sm:pr-6 pr-4 py-12"
     >
       <section className="py-12">
         <div className="container mx-auto px-6 md:px-8">
@@ -87,7 +87,7 @@ const About = () => {
         <div>
           <img src={logo} alt={companyName} className=" h-16" />
         </div>
-        <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
+        <div className="mt-6 flex flex-wrap sm:gap-10 gap-8 items-center justify-center h-12">
           {sections.map((section, index) => (
             <a
               key={`${section.name}-${index}`}
@@ -98,7 +98,7 @@ const About = () => {
             </a>
           ))}
         </div>
-        <div className="flex items-center gap-x-8 mt-6 h-8">
+        <div className="flex items-center gap-x-8 mt-6 mt-12 h-8">
           {icons.map((item, index) => {
             return (
               <a target="_blank" key={item.label} href={item.url}>

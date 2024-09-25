@@ -3,7 +3,7 @@ import { Accordion } from "rsuite";
 import "rsuite/Accordion/styles/index.css";
 const Help = () => {
   return (
-    <div className="h-screen p-4">
+    <div className="h-screen py-2 pt-2 pr-12 w-full">
       <h1 className="text-[#ec4755] text-center text-[2rem] my-4 font-bold  ">
         Help
       </h1>
