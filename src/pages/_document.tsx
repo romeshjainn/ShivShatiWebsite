@@ -1,13 +1,12 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script"; // Import Script from Next.js
 
-import { AppConfig } from '../utils/AppConfig';
+import { AppConfig } from "../utils/AppConfig";
 
-// Need to create a custom _document because i18n support is not compatible with `next export`.
 class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        {/* <Head /> */}
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <link
@@ -37,12 +36,27 @@ class MyDocument extends Document {
             name="google-site-verification"
             content="XPJY17UFsaQkd4B969Nqw6gnnM-5BSgLNZPRXjavlb8"
           />
+
+          {/* Google Analytics */}
+          <Script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RH60V2NCF3"
+          ></Script>
+          <Script id="google-analytics">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-RH60V2NCF3');
+            `}
+          </Script>
+
+          {/* Calendly Widget */}
+          <Script
+            src="https://assets.calendly.com/assets/external/widget.js"
+            strategy="lazyOnload" // Lazy loading to improve performance
+          />
         </Head>
-        <script
-          type="text/javascript"
-          src="https://assets.calendly.com/assets/external/widget.js"
-          async
-        ></script>
         <body>
           <Main />
           <NextScript />

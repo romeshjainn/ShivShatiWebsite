@@ -13,11 +13,10 @@ const Aws = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
         </div>
         <div className="p-6 text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">
-            AWS Mastery Course
+          <h1 className="text-4xl font-bold mb-4">
+            Web Development Course
           </h1>
-          <p className="text-lg text-black mb-6">
-            Here’s a description for a web development course that you can use:
+          <p className="text-lg text-black mb-6">            
             Explore the fundamentals of web development and build a strong
             foundation in creating modern, responsive, and dynamic websites.
             This comprehensive course covers essential topics including HTML,

@@ -18,6 +18,7 @@ export const cardData = [
     offerValidTill: "30 Sep, 2024",
     bookADemo:
       "https://calendly.com/shivshaktiinstitute/ssti-python-demo-class-clone?month=2024-09",
+    subTitle: "Enroll now and take your digital marketing skills to the sky.",
   },
   {
     route: "/web-development",
@@ -31,6 +32,7 @@ export const cardData = [
     offerValidTill: "30 Sep, 2024",
     bookADemo:
       "https://calendly.com/shivshaktiinstitute/ssti-java-demo-class-clone",
+    subTitle: "Enroll now and take your web development skills to the sky.",
   },
   {
     route: "/python-full-stack",
@@ -44,6 +46,7 @@ export const cardData = [
     offerValidTill: "30 Sep, 2024",
     bookADemo:
       "https://calendly.com/shivshaktiinstitute/ssti-web-development-demo-class-clone",
+    subTitle: "Enroll now and take your python full stack skills to the sky.",
   },
 ];
 
@@ -59,8 +62,8 @@ export const cardData2 = [
     oldPrice: "70,000",
     newPrice: "45,000",
     offerValidTill: "30 Sep, 2024",
-    bookADemo:
-      "https://calendly.com/shivshaktiinstitute/ssti-java-demo-class",
+    bookADemo: "https://calendly.com/shivshaktiinstitute/ssti-java-demo-class",
+    subTitle: "Enroll now and take your java full stack skills to the sky.",
   },
   {
     route: "/java",
@@ -73,6 +76,7 @@ export const cardData2 = [
     newPrice: "20,000",
     offerValidTill: "30 Sep, 2024",
     bookADemo: "https://calendly.com/shivshaktiinstitute/ssti-java-demo-class",
+    subTitle: "Enroll now and take your java skills to the sky.",
   },
   {
     route: "/python",
@@ -86,5 +90,6 @@ export const cardData2 = [
     offerValidTill: "30 Sep, 2024",
     bookADemo:
       "https://calendly.com/shivshaktiinstitute/ssti-web-development-demo-class-clone",
+    subTitle: "Enroll now and take your python skills to the sky.",
   },
 ];
