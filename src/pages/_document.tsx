@@ -1,6 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script"; // Import Script from Next.js
-
 import { AppConfig } from "../utils/AppConfig";
 
 class MyDocument extends Document {
@@ -38,24 +37,23 @@ class MyDocument extends Document {
           />
 
           {/* Google Analytics */}
-
-          <script
-            async
+          <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-RH60V2NCF3"
-          ></script>
-          <script id="google-analytics">
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-RH60V2NCF3');
             `}
-          </script>
+          </Script>
 
           {/* Calendly Widget */}
-          <script
+          <Script
             src="https://assets.calendly.com/assets/external/widget.js"
-            strategy="lazyOnload" // Lazy loading to improve performance
+            strategy="lazyOnload"
           />
         </Head>
         <body>
