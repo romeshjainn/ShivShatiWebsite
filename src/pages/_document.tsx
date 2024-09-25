@@ -38,21 +38,22 @@ class MyDocument extends Document {
           />
 
           {/* Google Analytics */}
-          <Script
+
+          <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-RH60V2NCF3"
-          ></Script>
-          <Script id="google-analytics">
+          ></script>
+          <script id="google-analytics">
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-RH60V2NCF3');
             `}
-          </Script>
+          </script>
 
           {/* Calendly Widget */}
-          <Script
+          <script
             src="https://assets.calendly.com/assets/external/widget.js"
             strategy="lazyOnload" // Lazy loading to improve performance
           />
